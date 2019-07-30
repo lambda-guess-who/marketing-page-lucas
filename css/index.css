@@ -6,7 +6,7 @@
   transform: rotate(-20deg);
 }
 
-#landing .btn {
+.btn {
   border-radius: 50px;
   background-color: #ffffff;
   padding: 10px 0px;
@@ -189,7 +189,7 @@ h3 {
 p {
   font-family: "M PLUS Rounded 1c";
   font-size: 2.2rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
   color: #ffffff;
 }
 
@@ -198,6 +198,7 @@ p {
   background-size: cover;
   background-attachment: fixed;
   margin: 0 auto;
+  padding: 1rem;
 }
 .container #twitter-icon {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(45deg) brightness(101%) contrast(103%);
@@ -247,10 +248,8 @@ p {
   margin: 4rem 0px;
   text-shadow: 0px 2px 2px #197db7;
 }
-#landing .cta img {
-  width: 20rem;
-}
-#landing .btn {
+
+.btn {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -259,18 +258,69 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border-color: #103fff;
+  border: 4px solid #103fff;
   box-shadow: 2px 2px 2px #197db7;
   padding: 1.5rem 0px;
 }
-#landing .btn h2 {
+.btn h2 {
   color: #14171a;
   text-align: center;
   text-shadow: none;
 }
-#landing .btn p {
+.btn p {
   margin-top: 1rem;
   color: #667785;
+}
+
+.appStore {
+  width: 20rem;
+}
+
+#game-example {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tweet-carousel {
+  display: flex;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  height: 400px;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.tweet-card {
+  background-color: white;
+  min-width: 350px;
+  box-shadow: 2px 2px 2px #197db7;
+  border-radius: 5rem;
+  padding-left: 2.5rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  margin: 4rem 0 4rem 2rem;
+}
+.tweet-card .tweet-text,
+.tweet-card .tweet-date {
+  color: #2e2f30;
+}
+.tweet-card .tweet-date {
+  font-size: 1.5rem;
+}
+.tweet-card .tweet-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.tweet-card .comments,
+.tweet-card .retweets,
+.tweet-card .likes {
+  color: #1da1f2;
 }
 
 /*# sourceMappingURL=index.css.map */

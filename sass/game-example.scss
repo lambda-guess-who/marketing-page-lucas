@@ -1,0 +1,44 @@
+#game-example {
+    margin-top: 200px;
+    @include flex(column, flex-start, center);
+}
+
+.tweet-carousel {
+    display: flex;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    height: 400px;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.tweet-card {
+    background-color: white;
+    min-width: 350px;
+    box-shadow: unquote($btnShadow);
+    border-radius: $medium + 1rem;
+    padding-left: $small + 0.5rem;
+    padding-top: $small;
+    padding-right: $small;
+    margin: $medium 0 $medium $small;
+
+    .tweet-text,
+    .tweet-date {
+        color: $tweetText;
+    }
+
+    .tweet-date {
+        font-size: $small - 0.5rem;
+    }
+
+    .tweet-info {
+        @include flex(row, flex-start);
+    }
+
+    .comments,
+    .retweets,
+    .likes {
+        color: $darkishBlue;
+    }
+}

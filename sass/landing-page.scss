@@ -3,6 +3,7 @@
     background-size: cover;
     background-attachment: fixed;
     margin: 0 auto;
+    padding: $verySmall;
 
     #twitter-icon {
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(45deg)
@@ -50,26 +51,26 @@
             margin: $medium 0px;
             text-shadow: unquote($textShadow);
         }
+    }
+}
 
-        img {
-            width: 20rem;
-        }
+.btn {
+    @include flex(column, flex-start, center);
+    @include buttonPill();
+    padding: $verySmall + 0.5rem 0px;
+
+    h2 {
+        color: $boldBlack;
+        text-align: center;
+        text-shadow: none;
     }
 
-    .btn {
-        @include flex(column, flex-start, center);
-        @include buttonPill();
-        padding: $verySmall + 0.5rem 0px;
-
-        h2 {
-            color: $boldBlack;
-            text-align: center;
-            text-shadow: none;
-        }
-
-        p {
-            margin-top: $verySmall;
-            color: $handleTags;
-        }
+    p {
+        margin-top: $verySmall;
+        color: $handleTags;
     }
+}
+
+.appStore {
+    width: 20rem;
 }

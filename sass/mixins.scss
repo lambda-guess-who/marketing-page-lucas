@@ -13,6 +13,6 @@
 @mixin buttonPill($borderColor: $highlightBlue) {
     @extend %button-pill;
     @include flex(column, flex-start, center);
-    border-color: $borderColor;
+    border: 4px solid $borderColor;
     box-shadow: unquote($btnShadow);
 }

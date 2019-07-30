@@ -39,6 +39,6 @@ h3 {
 p {
     font-family: $fontFamily;
     font-size: 2.2rem;
-    line-height: $small;
+    line-height: $small + 0.5rem;
     color: $white;
 }
