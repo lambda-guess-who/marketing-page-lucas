@@ -19,16 +19,26 @@ h4,
 h5 {
     font-family: $fontFamily;
     color: $white;
+    text-shadow: unquote($textShadow);
 }
 
 h1 {
-    font-size: 3.7rem;
+    font-size: 5.5rem;
+    font-weight: 900;
 }
 
 h2 {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
+    font-weight: 800;
 }
 
 h3 {
     font-size: 2.8rem;
+}
+
+p {
+    font-family: $fontFamily;
+    font-size: 2.2rem;
+    line-height: $small;
+    color: $white;
 }

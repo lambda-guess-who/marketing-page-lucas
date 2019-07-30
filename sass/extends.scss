@@ -1,0 +1,15 @@
+%bg-icon {
+    position: absolute;
+    width: 4rem;
+    z-index: -1;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(45deg)
+        brightness(101%) contrast(103%) opacity(50%);
+    transform: rotate(-20deg);
+}
+
+%button-pill {
+    border-radius: 50px;
+    background-color: $white;
+    padding: 10px 0px;
+    width: 90%;
+}

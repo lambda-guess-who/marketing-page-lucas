@@ -1,3 +1,18 @@
+.container #twitter-2, .container #twitter-1 {
+  position: absolute;
+  width: 4rem;
+  z-index: -1;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(45deg) brightness(101%) contrast(103%) opacity(50%);
+  transform: rotate(-20deg);
+}
+
+#landing .btn {
+  border-radius: 50px;
+  background-color: #ffffff;
+  padding: 10px 0px;
+  width: 90%;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -154,18 +169,108 @@ h4,
 h5 {
   font-family: "M PLUS Rounded 1c";
   color: #ffffff;
+  text-shadow: 0px 2px 2px #197db7;
 }
 
 h1 {
-  font-size: 3.7rem;
+  font-size: 5.5rem;
+  font-weight: 900;
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 
 h3 {
   font-size: 2.8rem;
+}
+
+p {
+  font-family: "M PLUS Rounded 1c";
+  font-size: 2.2rem;
+  line-height: 2rem;
+  color: #ffffff;
+}
+
+.container {
+  background-image: linear-gradient(#1da1f2, #38d2f7);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0 auto;
+}
+.container #twitter-icon {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(45deg) brightness(101%) contrast(103%);
+  width: 6rem;
+  margin-bottom: 2rem;
+}
+.container #twitter-1 {
+  top: 40px;
+  left: 20px;
+}
+.container #twitter-2 {
+  top: 40px;
+  left: 300px;
+}
+
+#landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#landing header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 75%;
+  margin: 100px 0px;
+}
+#landing header img {
+  width: 4rem;
+}
+#landing header p {
+  margin-top: 2rem;
+  text-align: center;
+  line-height: 3rem;
+  text-shadow: 0px 2px 2px #197db7;
+}
+#landing .cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+#landing .cta .or {
+  margin: 4rem 0px;
+  text-shadow: 0px 2px 2px #197db7;
+}
+#landing .cta img {
+  width: 20rem;
+}
+#landing .btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-color: #103fff;
+  box-shadow: 2px 2px 2px #197db7;
+  padding: 1.5rem 0px;
+}
+#landing .btn h2 {
+  color: #14171a;
+  text-align: center;
+  text-shadow: none;
+}
+#landing .btn p {
+  margin-top: 1rem;
+  color: #667785;
 }
 
 /*# sourceMappingURL=index.css.map */

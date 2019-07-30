@@ -1,0 +1,75 @@
+.container {
+    background-image: linear-gradient($darkishBlue, $offTwitterBlue);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 auto;
+
+    #twitter-icon {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(45deg)
+            brightness(101%) contrast(103%);
+        width: 6rem;
+        margin-bottom: $small;
+    }
+
+    #twitter-1 {
+        @extend %bg-icon;
+        @include iconPosition(20px, 40px);
+    }
+
+    #twitter-2 {
+        @extend %bg-icon;
+        @include iconPosition(300px, 40px);
+    }
+}
+
+#landing {
+    @include flex(column, flex-start, center);
+
+    header {
+        @include flex(column, flex-start, center);
+        width: 75%;
+        margin: 100px 0px;
+
+        img {
+            width: $medium;
+        }
+
+        p {
+            margin-top: $small;
+            text-align: center;
+            line-height: $small + 1rem;
+            text-shadow: unquote($textShadow);
+        }
+    }
+
+    .cta {
+        @include flex(column, flex-start, center);
+        width: 100%;
+
+        .or {
+            margin: $medium 0px;
+            text-shadow: unquote($textShadow);
+        }
+
+        img {
+            width: 20rem;
+        }
+    }
+
+    .btn {
+        @include flex(column, flex-start, center);
+        @include buttonPill();
+        padding: $verySmall + 0.5rem 0px;
+
+        h2 {
+            color: $boldBlack;
+            text-align: center;
+            text-shadow: none;
+        }
+
+        p {
+            margin-top: $verySmall;
+            color: $handleTags;
+        }
+    }
+}
