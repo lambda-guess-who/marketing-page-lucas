@@ -1,10 +1,20 @@
 #categories {
-    margin-top: 100px;
     @include flex(column, flex-start, flex-start);
+    margin: $veryLarge auto;
+
+    @media screen and #{$tablet} {
+        @include flex(column, flex-start, flex-start);
+        width: 70%;
+    }
+
+    @media screen and #{$phone} {
+        width: 100%;
+    }
 
     .title {
         width: 60%;
         margin: 0 auto;
+        text-align: center;
         padding-bottom: $small;
     }
 
@@ -13,7 +23,7 @@
     .third,
     .fourth {
         width: 80%;
-        margin: $small $small/2;
+        margin: $verySmall $small/2;
 
         p {
             margin: 0px;

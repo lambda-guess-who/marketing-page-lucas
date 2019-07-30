@@ -9,8 +9,14 @@
     flex-wrap: nowrap;
     height: 350px;
     width: 100%;
-    scroll-snap-destination: 0% 100%;
-    scroll-snap-points-x: repeat(100%);
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    display: none;
+
+    @media screen and #{$tablet} {
+        display: flex;
+    }
 }
 
 .tweet-card {
@@ -23,7 +29,7 @@
     padding-left: $small + 0.5rem;
     padding-top: $small;
     padding-right: $small;
-    margin: $medium $small $small $small;
+    margin: $medium $verySmall $small $small;
 
     .tweet-deets {
         padding-bottom: $small;
@@ -67,6 +73,10 @@
     overflow-x: scroll;
     flex-wrap: nowrap;
     width: 100%;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .tweeter-choice {

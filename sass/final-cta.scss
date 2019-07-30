@@ -1,6 +1,15 @@
 #final-cta {
     @include flex(column, flex-start, center);
-    margin-top: 100px;
+    width: 40%;
+    margin: $veryLarge auto;
+
+    @media screen and #{$tablet} {
+        width: 60%;
+    }
+
+    @media screen and #{$phone} {
+        width: 100%;
+    }
 
     h1 {
         text-align: center;
