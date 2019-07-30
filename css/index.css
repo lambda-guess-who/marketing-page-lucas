@@ -1,16 +1,7 @@
-.container #twitter-2, .container #twitter-1 {
-  position: absolute;
-  width: 4rem;
-  z-index: -1;
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(45deg) brightness(101%) contrast(103%) opacity(50%);
-  transform: rotate(-20deg);
-}
-
-.btn {
+.tweeter-choice, .btn {
   border-radius: 50px;
   background-color: #ffffff;
   padding: 10px 0px;
-  width: 90%;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -183,35 +174,33 @@ h2 {
 }
 
 h3 {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #14171a;
+  text-shadow: none;
 }
 
 p {
   font-family: "M PLUS Rounded 1c";
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 2.5rem;
   color: #ffffff;
 }
 
 .container {
-  background-image: linear-gradient(#1da1f2, #38d2f7);
-  background-size: cover;
+  background-image: url("../imgs/wallpaper.png");
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: 120%;
   background-attachment: fixed;
   margin: 0 auto;
-  padding: 1rem;
 }
 .container #twitter-icon {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(45deg) brightness(101%) contrast(103%);
   width: 6rem;
   margin-bottom: 2rem;
-}
-.container #twitter-1 {
-  top: 40px;
-  left: 20px;
-}
-.container #twitter-2 {
-  top: 40px;
-  left: 300px;
 }
 
 #landing {
@@ -226,7 +215,7 @@ p {
   justify-content: flex-start;
   align-items: center;
   width: 75%;
-  margin: 100px 0px;
+  margin: 10rem 0px;
 }
 #landing header img {
   width: 4rem;
@@ -236,6 +225,7 @@ p {
   text-align: center;
   line-height: 3rem;
   text-shadow: 0px 2px 2px #197db7;
+  font-size: 2.5rem;
 }
 #landing .cta {
   display: flex;
@@ -254,12 +244,9 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   border: 4px solid #103fff;
   box-shadow: 2px 2px 2px #197db7;
+  width: 90%;
   padding: 1.5rem 0px;
 }
 .btn h2 {
@@ -268,8 +255,12 @@ p {
   text-shadow: none;
 }
 .btn p {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   color: #667785;
+}
+.btn img {
+  max-width: 75px;
+  border-radius: 50%;
 }
 
 .appStore {
@@ -277,7 +268,7 @@ p {
 }
 
 #game-example {
-  margin-top: 200px;
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -288,21 +279,29 @@ p {
   display: flex;
   overflow-x: scroll;
   flex-wrap: nowrap;
-  -webkit-overflow-scrolling: touch;
-  height: 400px;
+  height: 350px;
   width: 100%;
-  padding-right: 20px;
+  scroll-snap-destination: 0% 100%;
+  scroll-snap-points-x: repeat(100%);
 }
 
 .tweet-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   background-color: white;
+  border: 4px solid #667785;
   min-width: 350px;
   box-shadow: 2px 2px 2px #197db7;
   border-radius: 5rem;
   padding-left: 2.5rem;
   padding-top: 2rem;
   padding-right: 2rem;
-  margin: 4rem 0 4rem 2rem;
+  margin: 4rem 2rem 2rem 2rem;
+}
+.tweet-card .tweet-deets {
+  padding-bottom: 2rem;
 }
 .tweet-card .tweet-text,
 .tweet-card .tweet-date {
@@ -314,13 +313,135 @@ p {
 .tweet-card .tweet-info {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+}
+.tweet-card .icon {
+  max-width: 1.7rem;
+  filter: invert(47%) sepia(3%) saturate(2701%) hue-rotate(165deg) brightness(94%) contrast(12%);
+  margin-right: 5px;
 }
 .tweet-card .comments,
 .tweet-card .retweets,
 .tweet-card .likes {
   color: #1da1f2;
+  font-weight: 500;
+}
+.tweet-card .comments,
+.tweet-card .retweets {
+  margin-right: 1rem;
+}
+
+.choice-carousel {
+  display: flex;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.tweeter-choice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 350px;
+  max-width: 350px;
+  margin: 1rem 2rem;
+  border: 4px solid #667785;
+}
+.tweeter-choice .picHandle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tweeter-choice .profilPic {
+  max-width: 5.5rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.tweeter-choice .tweeterTag {
+  text-align: left;
+}
+.tweeter-choice .icon {
+  max-width: 3.5rem;
+  margin-right: 1rem;
+}
+.tweeter-choice h3 {
+  color: #14171a;
+  text-shadow: none;
+}
+.tweeter-choice p {
+  color: #667785;
+}
+
+#categories {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#categories .title {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+#categories .first,
+#categories .second,
+#categories .third,
+#categories .fourth {
+  width: 80%;
+  margin: 2rem 1rem;
+}
+#categories .first p,
+#categories .second p,
+#categories .third p,
+#categories .fourth p {
+  margin: 0px;
+}
+#categories .first {
+  margin-top: 2rem;
+  border: 4px solid #00b912;
+}
+#categories .second {
+  border: 4px solid #103fff;
+  align-self: flex-end;
+}
+#categories .third {
+  border: 4px solid #ff0000;
+}
+#categories .fourth {
+  border: 4px solid #af3fe4;
+  align-self: flex-end;
+}
+
+#final-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 100px;
+}
+#final-cta h1 {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+#final-cta .btn {
+  border: 4px solid #ff9900;
+  margin-bottom: 6rem;
+}
+
+footer {
+  margin: 10rem 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer h2 {
+  margin: 1rem 0px;
 }
 
 /*# sourceMappingURL=index.css.map */

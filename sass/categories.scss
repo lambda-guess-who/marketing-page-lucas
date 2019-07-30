@@ -1,0 +1,41 @@
+#categories {
+    margin-top: 100px;
+    @include flex(column, flex-start, flex-start);
+
+    .title {
+        width: 60%;
+        margin: 0 auto;
+        padding-bottom: $small;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+        width: 80%;
+        margin: $small $small/2;
+
+        p {
+            margin: 0px;
+        }
+    }
+
+    .first {
+        margin-top: $small;
+        border: 4px solid $highlightGreen;
+    }
+
+    .second {
+        border: 4px solid $highlightBlue;
+        align-self: flex-end;
+    }
+
+    .third {
+        border: 4px solid $highlightRd;
+    }
+
+    .fourth {
+        border: 4px solid $highlightPurple;
+        align-self: flex-end;
+    }
+}

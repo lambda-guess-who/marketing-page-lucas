@@ -10,9 +10,10 @@
     align-items: $align;
 }
 
-@mixin buttonPill($borderColor: $highlightBlue) {
+@mixin buttonPill($borderColor: $highlightBlue, $width: 90%) {
     @extend %button-pill;
     @include flex(column, flex-start, center);
     border: 4px solid $borderColor;
     box-shadow: unquote($btnShadow);
+    width: 90%;
 }
