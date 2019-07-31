@@ -621,10 +621,20 @@ footer p a {
   margin: 4rem auto 6rem auto;
 }
 #mission p {
-  text-align: center;
+  text-align: justify;
 }
 #mission h2 {
   margin-top: 6rem;
+}
+@media screen and (max-width: 600px) {
+  #mission {
+    width: 90%;
+  }
+}
+
+#team p {
+  width: 50%;
+  text-align: center;
 }
 
 .flip-card {

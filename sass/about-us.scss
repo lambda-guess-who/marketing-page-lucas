@@ -17,11 +17,22 @@
     margin: $medium auto $large auto;
 
     p {
-        text-align: center;
+        text-align: justify;
     }
 
     h2 {
         margin-top: $large;
+    }
+
+    @media screen and #{$phone} {
+        width: 90%;
+    }
+}
+
+#team {
+    p {
+        width: 50%;
+        text-align: center;
     }
 }
 
