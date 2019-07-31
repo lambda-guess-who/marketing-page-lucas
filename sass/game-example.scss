@@ -1,6 +1,10 @@
 #game-example {
     margin-top: $veryLarge;
-    //@include flex(column, flex-start, center);
+    display: none;
+
+    @media screen and #{$tablet} {
+        display: block;
+    }
 
     .title {
         text-align: center;
@@ -34,7 +38,7 @@
 
     @media screen and #{$phone} {
         height: 350px;
-        min-width: 300px;
+        max-width: 300px;
     }
 
     .tweet-deets {
@@ -126,5 +130,22 @@
 
     p {
         color: $handleTags;
+    }
+}
+
+#game-example-desktop {
+    @include flex(row, space-around, center);
+
+    @media screen and #{$tablet} {
+        @include flex(column, flex-start, flex-start);
+    }
+}
+
+.w50 {
+    width: 40%;
+    @include flex(column, flex-start, center);
+
+    @media screen and #{$tablet} {
+        display: none;
     }
 }

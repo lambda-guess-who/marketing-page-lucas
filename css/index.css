@@ -319,6 +319,12 @@ p {
 
 #game-example {
   margin-top: 10rem;
+  display: none;
+}
+@media screen and (max-width: 970px) {
+  #game-example {
+    display: block;
+  }
 }
 #game-example .title {
   text-align: center;
@@ -354,7 +360,7 @@ p {
 @media screen and (max-width: 600px) {
   .tweet-card {
     height: 350px;
-    min-width: 300px;
+    max-width: 300px;
   }
 }
 .tweet-card .tweet-deets {
@@ -443,6 +449,34 @@ p {
   color: #667785;
 }
 
+#game-example-desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 970px) {
+  #game-example-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.w50 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media screen and (max-width: 970px) {
+  .w50 {
+    display: none;
+  }
+}
+
 #categories {
   display: flex;
   flex-direction: column;
@@ -466,7 +500,7 @@ p {
   }
 }
 #categories .title {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 2rem;
