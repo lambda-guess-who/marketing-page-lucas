@@ -30,4 +30,11 @@ footer {
     h2 {
         margin: $verySmall 0px;
     }
+
+    p {
+        margin-top: $medium;
+        a {
+            text-decoration: underline;
+        }
+    }
 }
