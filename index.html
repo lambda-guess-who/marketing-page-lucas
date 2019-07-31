@@ -9,8 +9,8 @@
             href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,900&display=swap"
             rel="stylesheet"
         />
-        <!-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+        <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     </head>
 
     <body class="container">
@@ -27,7 +27,7 @@
                     <p>The Game Where You Guess Who Tweeted What?!</p>
                 </header>
                 <div class="cta">
-                    <a class="btn btn-hover" href="about-us.html">
+                    <a class="btn btn-hover play-now" href="about-us.html">
                         <div>
                             <h2 class="btn-title">Play Now!</h2>
                             <p>@getStartedGuessing!</p>
@@ -398,7 +398,7 @@
 
             <div id="categories">
                 <h2 class="title">Tons of Categories!</h2>
-                <div class="btn first">
+                <div class="btn first category">
                     <h3 class="btn-title">Venture Capitalists</h3>
                     <p>@pleaseFundMe</p>
                 </div>
@@ -436,16 +436,22 @@
             <footer>
                 <h2 class="title"><a href="about-us.html">About Us</a></h2>
                 <h2 class="title">
-                    <a href="mailto:lucasabazemore@gmail.com">Contact Us</a>
+                    <a href="contact-us.html">Contact Us</a>
                 </h2>
                 <h2 class="title">
                     <a href="https://rickrolled.fr/">Terms Of Service</a>
                 </h2>
                 <p>
                     Forged @
-                    <a href="https://lambdaschool.com/">Lambda School</a>
+                    <a href="https://lambdaschool.com/">Lambda Schools</a>
                 </p>
             </footer>
         </section>
     </body>
 </html>
+<script>
+    $(document).on('click', function() {
+        $('#game-example-desktop').effect('shake');
+        $('#categories').effect('shake');
+    });
+</script>
