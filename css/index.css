@@ -195,7 +195,7 @@ p {
   /* Do not repeat the image */
   background-size: 120%;
   background-attachment: fixed;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 .container #twitter-icon {
@@ -203,7 +203,12 @@ p {
   width: 6rem;
   margin-bottom: 2rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1120px) {
+  .container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 970px) {
   .container {
     width: 100%;
   }
@@ -227,7 +232,7 @@ p {
   max-width: 350px;
   flex: 1;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 970px) {
   #landing {
     display: flex;
     flex-direction: column;
@@ -302,6 +307,21 @@ p {
   width: 20rem;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 970px) {
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
 #game-example {
   margin-top: 10rem;
   display: flex;
@@ -316,13 +336,15 @@ p {
   flex-wrap: nowrap;
   height: 350px;
   width: 100%;
-  display: none;
 }
 .tweet-carousel::-webkit-scrollbar {
   display: none;
 }
-@media screen and (max-width: 800px) {
-  .tweet-carousel {
+.tweet-carousel .tweet-card:nth-of-type(n + 2) {
+  display: none;
+}
+@media screen and (max-width: 970px) {
+  .tweet-carousel .tweet-card:nth-of-type(n) {
     display: flex;
   }
 }
@@ -383,6 +405,14 @@ p {
 .choice-carousel::-webkit-scrollbar {
   display: none;
 }
+.choice-carousel .tweeter-choice:nth-of-type(n + 2) {
+  display: none;
+}
+@media screen and (max-width: 970px) {
+  .choice-carousel .tweeter-choice:nth-of-type(n) {
+    display: flex;
+  }
+}
 
 .tweeter-choice {
   display: flex;
@@ -428,7 +458,7 @@ p {
   align-items: flex-start;
   margin: 10rem auto;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 970px) {
   #categories {
     display: flex;
     flex-direction: column;
@@ -485,7 +515,7 @@ p {
   width: 40%;
   margin: 10rem auto;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 970px) {
   #final-cta {
     width: 60%;
   }
