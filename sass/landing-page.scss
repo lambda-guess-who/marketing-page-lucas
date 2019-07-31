@@ -52,6 +52,10 @@
         width: 75%;
         margin: $large 0px;
 
+        @media screen and #{$phone} {
+            width: 95%;
+        }
+
         img {
             width: $medium;
         }
@@ -68,6 +72,10 @@
     .cta {
         @include flex(column, flex-start, center);
         width: 80%;
+
+        @media screen and #{$phone} {
+            width: 90%;
+        }
 
         .or {
             margin: $medium 0px;
