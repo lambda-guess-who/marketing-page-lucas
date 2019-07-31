@@ -308,7 +308,10 @@ p {
 }
 
 .flex-column {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #game-example {
@@ -329,14 +332,6 @@ p {
 }
 .tweet-carousel::-webkit-scrollbar {
   display: none;
-}
-.tweet-carousel .tweet-card:nth-of-type(n + 2) {
-  display: none;
-}
-@media screen and (max-width: 970px) {
-  .tweet-carousel .tweet-card:nth-of-type(n) {
-    display: flex;
-  }
 }
 
 .tweet-card {
@@ -388,20 +383,12 @@ p {
 
 .choice-carousel {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
   flex-wrap: nowrap;
   width: 100%;
 }
 .choice-carousel::-webkit-scrollbar {
   display: none;
-}
-.choice-carousel .tweeter-choice:nth-of-type(n + 2) {
-  display: none;
-}
-@media screen and (max-width: 970px) {
-  .choice-carousel .tweeter-choice:nth-of-type(n) {
-    display: flex;
-  }
 }
 
 .tweeter-choice {
@@ -442,11 +429,11 @@ p {
 }
 
 #categories {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 50%;
   margin: 10rem auto;
 }
 @media screen and (max-width: 970px) {

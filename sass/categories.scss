@@ -1,6 +1,6 @@
 #categories {
-    flex: 1;
     @include flex(column, flex-start, flex-start);
+    width: 50%;
     margin: $veryLarge auto;
 
     @media screen and #{$tablet} {

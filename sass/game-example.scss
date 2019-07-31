@@ -13,16 +13,6 @@
     &::-webkit-scrollbar {
         display: none;
     }
-
-    .tweet-card:nth-of-type(n + 2) {
-        display: none;
-    }
-
-    @media screen and #{$tablet} {
-        .tweet-card:nth-of-type(n) {
-            display: flex;
-        }
-    }
 }
 
 .tweet-card {
@@ -76,22 +66,12 @@
 
 .choice-carousel {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto;
     flex-wrap: nowrap;
     width: 100%;
 
     &::-webkit-scrollbar {
         display: none;
-    }
-
-    .tweeter-choice:nth-of-type(n + 2) {
-        display: none;
-    }
-
-    @media screen and #{$tablet} {
-        .tweeter-choice:nth-of-type(n) {
-            display: flex;
-        }
     }
 }
 
