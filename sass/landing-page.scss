@@ -105,9 +105,5 @@
 }
 
 .flex-column {
-    @include flex(row, space-around, center);
-
-    @media screen and #{$tablet} {
-        @include flex(column, flex-start, center);
-    }
+    display: none;
 }

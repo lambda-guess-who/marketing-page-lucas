@@ -308,22 +308,12 @@ p {
 }
 
 .flex-column {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-@media screen and (max-width: 970px) {
-  .flex-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
+  display: none;
 }
 
 #game-example {
   margin-top: 10rem;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -452,6 +442,7 @@ p {
 }
 
 #categories {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
