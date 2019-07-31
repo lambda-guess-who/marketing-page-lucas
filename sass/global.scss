@@ -59,3 +59,27 @@ a {
     transition: all 0.5s linear;
     width: 100%;
 }
+
+.container {
+    background-image: linear-gradient($darkishBlue, $offTwitterBlue);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 70%;
+    margin: 0 auto;
+
+    #twitter-icon {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(45deg)
+            brightness(101%) contrast(103%);
+        width: 6rem;
+        margin-bottom: $small;
+    }
+
+    @media screen and #{$desktop} {
+        width: 80%;
+    }
+
+    @media screen and #{$tablet} {
+        width: 100%;
+    }
+}

@@ -12,6 +12,8 @@ $checkMarkGreen: #00b450;
 $wrongRed: #fe4a49;
 $white: #ffffff;
 
+$filterWhite: 'invert(100%) sepia(0%) saturate(0%) hue-rotate(45deg) brightness(101%) contrast(103%)';
+
 $verySmall: 1rem;
 $small: 2rem; //20px
 $medium: 4rem; //40px
@@ -20,7 +22,7 @@ $veryLarge: 10rem; //80px
 
 $btnShadow: '2px 2px 2px #197db7';
 $textShadow: '0px 2px 2px #197db7';
-$teamShadow: '0px 2px 2px rgba(0,0,0, 0.25)';
+$teamShadow: '0px 2px 2px 2px rgba(0,0,0, 0.25)';
 
 $fontFamily: 'M PLUS Rounded 1c';
 

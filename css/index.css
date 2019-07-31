@@ -203,6 +203,8 @@ a {
 
 .container {
   background-image: linear-gradient(#1da1f2, #38d2f7);
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   width: 70%;
   margin: 0 auto;
@@ -594,6 +596,7 @@ footer h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 4rem;
 }
 
 .flexCol {
@@ -603,9 +606,13 @@ footer h2 {
   align-items: center;
 }
 
+.heroTitle {
+  margin-top: 10rem;
+}
+
 #mission {
-  width: 50%;
-  margin: 10rem auto;
+  width: 60%;
+  margin: 6rem auto;
 }
 #mission p {
   text-align: center;
@@ -615,15 +622,14 @@ footer h2 {
 }
 
 .flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  border: none;
+  width: 250px;
+  height: 250px;
   perspective: 1000px;
   margin: 1rem;
+  transition: all 0.8s linear;
 }
-.flip-card:nth-of-type(2n) img {
-  border: 4px solid #14171a;
+.flip-card img {
+  border: 4px solid #ffffff;
 }
 .flip-card:nth-of-type(2n + 1) .flip-card-back {
   background-color: #af3fe4;
@@ -653,7 +659,8 @@ footer h2 {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  box-shadow: 0px 2px 2px rgba(0,0,0, 0.25);
+  padding: 2rem;
+  box-shadow: 0px 2px 2px 2px rgba(0,0,0, 0.25);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -662,6 +669,18 @@ footer h2 {
 .flip-card-front h4,
 .flip-card-back h4 {
   margin: 1rem;
+}
+.flip-card-front img,
+.flip-card-back img {
+  width: 250px;
+  height: 250px;
+}
+.flip-card-front img.github-icon,
+.flip-card-back img.github-icon {
+  width: 40px;
+  height: 40px;
+  border: none;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(45deg) brightness(101%) contrast(103%);
 }
 
 .flip-card-front {
@@ -677,7 +696,7 @@ footer h2 {
 
 .team-img {
   border-radius: 30px;
-  box-shadow: 0px 2px 2px rgba(0,0,0, 0.25);
+  box-shadow: 0px 2px 2px 2px rgba(0,0,0, 0.25);
 }
 
 /*# sourceMappingURL=index.css.map */
