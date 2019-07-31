@@ -618,6 +618,10 @@ footer h2 {
   transform: rotateY(180deg);
 }
 
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
 .flip-card-front,
 .flip-card-back {
   border-radius: 30px;
