@@ -25,6 +25,7 @@
             <h2></h2>
         </section>
 
+        <h2>Team</h2>
         <section id="team">
             <div class="flip-card">
                 <div class="flip-card-inner">
@@ -178,10 +179,11 @@
     integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
     crossorigin="anonymous"
 ></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
 <script>
     $(document).ready(function() {
-        $('.flip-card').click(function() {
+        $('.flip-card').on('tap', function() {
             $(this)
                 .find('.flip-card-inner')
                 .toggleClass('flip-card-around');
