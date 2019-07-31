@@ -1,6 +1,6 @@
 #final-cta {
     @include flex(column, flex-start, center);
-    width: 40%;
+    width: 50%;
     margin: $veryLarge auto;
 
     @media screen and #{$tablet} {
@@ -24,6 +24,7 @@
 
 footer {
     margin: $veryLarge 0px;
+    padding-bottom: $veryLarge;
     @include flex(column, flex-start, center);
 
     h2 {

@@ -39,9 +39,23 @@ h3 {
     text-shadow: none;
 }
 
+h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $boldBlack;
+    text-shadow: none;
+}
+
 p {
     font-family: $fontFamily;
     font-size: 2rem;
     line-height: $small + 0.5rem;
     color: $white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.5s linear;
+    width: 100%;
 }

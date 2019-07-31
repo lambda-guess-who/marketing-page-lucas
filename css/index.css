@@ -180,11 +180,25 @@ h3 {
   text-shadow: none;
 }
 
+h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #14171a;
+  text-shadow: none;
+}
+
 p {
   font-family: "M PLUS Rounded 1c";
   font-size: 2rem;
   line-height: 2.5rem;
   color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.5s linear;
+  width: 100%;
 }
 
 .container {
@@ -293,6 +307,7 @@ p {
   width: 90%;
   padding: 1.5rem 0px;
   transition: all 0.2s ease-in;
+  width: 80%;
 }
 .btn h2 {
   color: #14171a;
@@ -539,7 +554,7 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 40%;
+  width: 50%;
   margin: 10rem auto;
 }
 @media screen and (max-width: 970px) {
@@ -563,6 +578,7 @@ p {
 
 footer {
   margin: 10rem 0px;
+  padding-bottom: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -570,6 +586,60 @@ footer {
 }
 footer h2 {
   margin: 1rem 0px;
+}
+
+#team {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: none;
+  perspective: 1000px;
+  margin: 1rem;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  border-radius: 30px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.team-img {
+  border-radius: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */

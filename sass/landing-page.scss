@@ -88,6 +88,7 @@
     @include buttonPill();
     padding: $verySmall + 0.5rem 0px;
     transition: all 0.2s ease-in;
+    width: 80%;
 
     h2 {
         color: $boldBlack;
