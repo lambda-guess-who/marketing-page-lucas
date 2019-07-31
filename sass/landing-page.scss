@@ -1,8 +1,5 @@
 .container {
-    background-image: url('../imgs/wallpaper.png');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: 120%;
+    background-image: linear-gradient($darkishBlue, $offTwitterBlue);
     background-attachment: fixed;
     width: 70%;
     margin: 0 auto;
@@ -25,6 +22,12 @@
 
 #landing {
     @include flex(row, space-around, center);
+
+    @media screen and #{$veryPhone} {
+        h1 {
+            font-size: 4rem;
+        }
+    }
 
     .landing-cta {
         @include flex(column, flex-start, center);

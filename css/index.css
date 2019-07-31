@@ -188,12 +188,7 @@ p {
 }
 
 .container {
-  background-image: url("../imgs/wallpaper.png");
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: 120%;
+  background-image: linear-gradient(#1da1f2, #38d2f7);
   background-attachment: fixed;
   width: 70%;
   margin: 0 auto;
@@ -219,6 +214,11 @@ p {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+@media screen and (max-width: 375px) {
+  #landing h1 {
+    font-size: 4rem;
+  }
 }
 #landing .landing-cta {
   display: flex;
