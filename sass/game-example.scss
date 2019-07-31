@@ -1,15 +1,20 @@
 #game-example {
     margin-top: $veryLarge;
-    flex: 1;
-    @include flex(column, flex-start, center);
+    //@include flex(column, flex-start, center);
+
+    .title {
+        text-align: center;
+    }
 }
 
 .tweet-carousel {
     display: flex;
+    flex-direction: row;
     overflow-x: scroll;
-    flex-wrap: nowrap;
     height: 350px;
     width: 100%;
+
+    -webkit-overflow-scrolling: touch;
     &::-webkit-scrollbar {
         display: none;
     }
@@ -69,6 +74,7 @@
     overflow-x: auto;
     flex-wrap: nowrap;
     width: 100%;
+    -webkit-overflow-scrolling: touch;
 
     &::-webkit-scrollbar {
         display: none;

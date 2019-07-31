@@ -307,28 +307,20 @@ p {
   width: 20rem;
 }
 
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 #game-example {
   margin-top: 10rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+}
+#game-example .title {
+  text-align: center;
 }
 
 .tweet-carousel {
   display: flex;
+  flex-direction: row;
   overflow-x: scroll;
-  flex-wrap: nowrap;
   height: 350px;
   width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 .tweet-carousel::-webkit-scrollbar {
   display: none;
@@ -386,6 +378,7 @@ p {
   overflow-x: auto;
   flex-wrap: nowrap;
   width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 .choice-carousel::-webkit-scrollbar {
   display: none;
