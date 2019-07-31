@@ -97,6 +97,7 @@
     max-width: 350px;
     margin: $verySmall $small;
     border: 4px solid $handleTags;
+    box-shadow: #{$btnShadow};
 
     @media screen and #{$phone} {
         min-width: 300px;
@@ -138,6 +139,10 @@
 
     @media screen and #{$tablet} {
         @include flex(column, flex-start, flex-start);
+    }
+
+    .tweeter-choice {
+        box-shadow: #{$btnShadow};
     }
 }
 
