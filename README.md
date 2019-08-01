@@ -24,6 +24,10 @@ Given our lack of a UI / UX designer on the team, I took the initiative to desig
 
 [Here is a link to the Figma Designs](https://www.figma.com/file/d34mD8cxoaqJfwWJhRodei/Lambda-1-Guess-Who?node-id=6%3A19604)
 
+Example:
+
+![alt text](https://raw.githubusercontent.com/lambda-guess-who/marketing-page-lucas/master/imgs/Game-Correct-Answer.png)
+
 ## Design Decisions
 
 1. From within the Figma file in the Brain Dump file, I started with a level based game modeled off of the game "Tweet Stars" and other level based games like Candy Crush.
@@ -38,7 +42,7 @@ Given our lack of a UI / UX designer on the team, I took the initiative to desig
 
 This was very straight forward, as I modeled the landing page off the mobile application design:
 
-[! Landing-Page-Design](https://raw.githubusercontent.com/lambda-guess-who/marketing-page-lucas/master/imgs/landing-page.png 'Landing Page Design')
+[Landing-Page-Design-Image](https://raw.githubusercontent.com/lambda-guess-who/marketing-page-lucas/master/imgs/landing-page.png 'Landing Page Design')
 
 1. Mobile first design
 2. Horizontal scrolling to increase mobile interaction
