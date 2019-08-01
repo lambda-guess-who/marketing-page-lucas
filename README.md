@@ -4,11 +4,9 @@ This is the README.md for the Guess Who Lambda School Build Week project.
 
 # Project
 
-## Game
-
 The basis of the project was to create a mobile first twitter game. The game is a high-score based guessing game, where the player guesses who was the author of a given tweet from 2 or 3 choices. The player continues to play so long as they get answers right. When the get one wrong, they lose and their score is the number of correct answers they provided.
 
-## Objective
+## My Objective
 
 Build a marketing page for a mobile application
 
