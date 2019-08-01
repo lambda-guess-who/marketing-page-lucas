@@ -26,7 +26,7 @@ Given our lack of a UI / UX designer on the team, I took the initiative to desig
 
 Example:
 
-![alt text](https://raw.githubusercontent.com/lambda-guess-who/marketing-page-lucas/master/imgs/Game-Correct-Answer.png)
+<img alt="Guess Who UI Design" src="https://raw.githubusercontent.com/lambda-guess-who/marketing-page-lucas/master/imgs/Game-Correct-Answer.png" width="300" />
 
 ## Design Decisions
 
