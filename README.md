@@ -38,6 +38,8 @@ Given our lack of a UI / UX designer on the team, I took the initiative to desig
 
 This was very straight forward, as I modeled the landing page off the mobile application design:
 
+[! Landing-Page-Design](https://raw.githubusercontent.com/lambda-guess-who/marketing-page-lucas/master/imgs/landing-page.png 'Landing Page Design')
+
 1. Mobile first design
 2. Horizontal scrolling to increase mobile interaction
 3. Large buttons and modeled off UI for application
