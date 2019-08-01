@@ -63,25 +63,32 @@ This was very straight forward, as I modeled the landing page off the mobile app
 During this project, I ran into several challenges that I did not anticipate and overestimate their ease of implementation.
 
 1. Getting overflow to work properly
-   This is just difficult overall, and I ultimately didn't achieve the entirety of the desired effect (with additional padding on the far right scroll of the overflow).
+
+    This is just difficult overall, and I ultimately didn't achieve the entirety of the desired effect (with additional padding on the far right scroll of the overflow).
 
 2. Deciding to use display / not display
-   After wrestling the overflow for a number of hours, I opted to simply use the ability to display and not display items based on screen size.
+
+    After wrestling the overflow for a number of hours, I opted to simply use the ability to display and not display items based on screen size.
 
 3. Challenges with Deployment
-   Deployment was very easy, but I ran into issues with my original background image, some text styling, and the layout of components when the website was launched to Netlify. I did not anticipate those issues and ran into them much later than I would have liked.
+
+    Deployment was very easy, but I ran into issues with my original background image, some text styling, and the layout of components when the website was launched to Netlify. I did not anticipate those issues and ran into them much later than I would have liked.
 
 4. Netlify NOT displaying properly on mobile devices
-   For some reason the website just acts funny on my mobile device. I doesn't act funny at any screen size on desktop, but on an actual mobile device, it will just remove DOM elements entirely. No known solution and no known cause of the issue.
+
+    For some reason the website just acts funny on my mobile device. I doesn't act funny at any screen size on desktop, but on an actual mobile device, it will just remove DOM elements entirely. No known solution and no known cause of the issue.
 
 5. Starting with mobile first design and not considering the needs of the desktop
-   From my landing page designs, I started with a mobile first approach, but soon realized that my mobile designs were not going to correctly size to a desktop landing page. I also failed to design the desktop layout before coding. Bad Idea.
+
+    From my landing page designs, I started with a mobile first approach, but soon realized that my mobile designs were not going to correctly size to a desktop landing page. I also failed to design the desktop layout before coding. Bad Idea.
 
 6. Media query Sizing
-   I sized my components before I did my media queries, which isn't an issue in it's entirety; however, it made it difficult to determine tablet and phone sizes and I had to create 2 additional media queries for <400px and > 1100px specifically for large desktops and small mobile devices.
+
+    I sized my components before I did my media queries, which isn't an issue in it's entirety; however, it made it difficult to determine tablet and phone sizes and I had to create 2 additional media queries for <400px and > 1100px specifically for large desktops and small mobile devices.
 
 7. Dealing with Sass and Sass compiler
-   The Sass compiler was being a turd most of the time, until I realized that the compiler stops working if causes an error, even after you fix it. I spent too much time needed to kill the compiler and starting it back up again.
+
+    The Sass compiler was being a turd most of the time, until I realized that the compiler stops working if causes an error, even after you fix it. I spent too much time needed to kill the compiler and starting it back up again.
 
 # Learnings
 
